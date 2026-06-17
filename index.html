@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SC LATAM COMMUNITY - PRO MAX</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- FONDO / OVERLAY -->
+  <div class="overlay">
+
+    <!-- LOGO -->
+    <img src="assets/logo.png" class="logo">
+
+    <h1>SC LATAM COMMUNITY</h1>
+    <p>Sistema de Registro PRO MAX</p>
+
+    <!-- CONTADOR -->
+    <div class="counter-box">
+      <h2>👥 Inscritos</h2>
+      <span id="contador">0</span>
+    </div>
+
+    <!-- FORMULARIO -->
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSdM2LzJbzBGBAc528G3gLYXSKrgButOrbVkXNLV12big1pUag/formResponse"
+          method="POST"
+          target="hidden_iframe"
+          onsubmit="enviarExito()">
+
+      <input type="text" name="entry.152652370" placeholder="Nombre Completo" required>
+      <input type="text" name="entry.1413538207" placeholder="ID o Usuario del Juego" required>
+      <input type="text" name="entry.593121812" placeholder="Teléfono o Correo" required>
+
+      <button type="submit">🚀 Enviar Inscripción</button>
+
+    </form>
+
+    <!-- MENSAJE -->
+    <div id="successMessage">🎉 Registro enviado con éxito</div>
+
+    <!-- BOTONES SOCIALES -->
+    <div class="social">
+      <a href="https://discord.gg/TU_INVITACION" target="_blank">🎮 Discord</a>
+      <a href="https://wa.me/51999999999" target="_blank">📱 WhatsApp</a>
+    </div>
+
+    <!-- SONIDO -->
+    <audio id="successSound">
+      <source src="assets/sound.mp3" type="audio/mp3">
+    </audio>
+
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

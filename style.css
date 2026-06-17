@@ -6,9 +6,11 @@
 }
 
 body{
-  background:url('assets/bg.jpg') no-repeat center center fixed;
-  background-size:cover;
-  color:white;
+    background-image: url("https://raw.githubusercontent.com/SC-Alexander/sc-latam.community/refs/heads/main/Fondo1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* capa oscura */
@@ -139,11 +141,4 @@ button:hover{
 .social a:hover{
   background:#00aaff;
   transform:scale(1.05);
-}
-body{
-    background-image: url("https://raw.githubusercontent.com/SC-Alexander/sc-latam.community/refs/heads/main/Fondo1.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
